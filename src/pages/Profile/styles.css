@@ -1,0 +1,74 @@
+.profile-container{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/Bg.svg');
+    background-position: bottom;
+}
+
+.profile-container header{
+    display: flex;
+    width: 100%;
+}
+
+.profile-container .form-container{
+    flex: 2;
+}
+.profile-container header .logo{
+    flex: 1;
+}
+
+.profile-container header .logo img{
+    width: 100%;
+    max-width: 200px;
+    
+}
+
+.profile-container header .form-input{
+    width: 60%;
+    height: auto;
+    position: relative;
+}
+
+.profile-container header .form-input input{
+    margin-top: 40px;
+    height: 25px;
+    max-width: 250px;
+    min-width: 150px;
+    width: 100%;
+    padding-left: 40px;
+    color:#CDBE91;
+    background: #010101;
+    border: 1px solid #785A28;
+    box-sizing: border-box;
+    font-family: Asul;
+    font-size: 22px;
+    margin-left: -20px;
+}
+.profile-container header .form-input input::placeholder{
+    font-size: 22px;
+    color: #CDBE91;
+}
+
+
+.profile-container header .form-input svg{
+    top: 80%;
+    left: -10px;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1;
+}
+
+main #teste{
+    display: flex;
+    
+}
+
+main #teste .left-side-info{
+    flex: 1;
+}
+main #teste .right-side-info{
+    flex: 2;
+    margin-left: 175px;
+    max-width: 1000px;
+    
+}
