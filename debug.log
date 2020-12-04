@@ -1,2 +1,3 @@
 [1202/082815.367:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [1202/085509.188:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\PICHAU\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\f492ac7e-be68-4a6b-94bd-bb2a6140ad48: O sistema não pode encontrar o caminho especificado. (0x3)
+[1203/083638.980:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)

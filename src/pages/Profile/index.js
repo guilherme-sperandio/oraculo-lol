@@ -1,3 +1,4 @@
+import React from 'react';
 import Logo from '../../assets/logo-lol.svg';
 import {VscSearch} from 'react-icons/vsc';
 import './styles.css';
@@ -9,6 +10,7 @@ import loadSummoner from '../../api/summonerInfo';
 function Profile({location}) {
   const [loading, setLoading] = useState(true);
   const [summoner,setSummoner] = useState({});
+  
   useEffect(()=> {
     loadSummoner(location.state.invocador,setSummoner,setLoading);
   },[loadSummoner]);

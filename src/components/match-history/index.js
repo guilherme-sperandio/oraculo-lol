@@ -29,7 +29,7 @@ function MatchHistory(){
                             <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
-                            <h2>11/29/1</h2>
+                            
                         </li>
                         <li className="history-info">
                             <div className="bg-img"></div>

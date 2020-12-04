@@ -37,18 +37,17 @@
 }
 #container-match #match-history form::-webkit-scrollbar {
     width: 5px;
-  }
+}
   
 
 #container-match #match-history form::-webkit-scrollbar-track {
     background: #2A3540;
-  }
+}
   
 
 #container-match #match-history form::-webkit-scrollbar-thumb {
     background: rgb(145, 145, 145);
-  }
-  
+}
 
 #container-match #match-history form .history-info{
     margin-bottom: 5px;
