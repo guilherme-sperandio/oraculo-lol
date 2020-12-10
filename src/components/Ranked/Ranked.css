@@ -1,0 +1,30 @@
+.rankedContainer {
+    display: flex;
+    width: 330px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .rankedElo {
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  .rankedElo h2 {
+    font-size: 20px;
+    color: #cdbe91;
+    margin-bottom: 10px;
+  }
+  
+  .rankedElo h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+  }
+  
+  .rankedElo img {
+    width: 135px;
+  }
+  

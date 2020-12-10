@@ -1,0 +1,16 @@
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+
+.brandBig {
+  margin-top: 270px;
+  margin-bottom: 70px;
+  width: 515px;
+}

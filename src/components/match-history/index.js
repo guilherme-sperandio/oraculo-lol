@@ -1,6 +1,5 @@
 import React from 'react';
-import './styles.css';
-import  Icon  from '../../assets/yasuo.svg';
+import './styles.css'/
 
 function MatchHistory(){
     return(
@@ -24,72 +23,56 @@ function MatchHistory(){
                     <ul id="history">
                         <li className="history-info">
                             <div className="bg-img"></div>
-                            <h1>V I T Ó R I A</h1>
+                            <h1>Derrota</h1>
                             <div className="color">a</div>
-                            <img src={Icon}/>
-                            <h3>Yasuo</h3>
-                            <p>35:29</p>
-                            
-                        </li>
-                        <li className="history-info">
-                            <div className="bg-img"></div>
-                            <h1>D E R R O T A</h1>
-                            <div className="color">a</div>
-                            <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
                             <h2>11/29/1</h2>
                         </li>
                         <li className="history-info">
                             <div className="bg-img"></div>
-                            <h1>V I T Ó R I A</h1>
+                            <h1>Vitória</h1>
                             <div className="color">a</div>
-                            <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
                             <h2>11/29/1</h2>
                         </li>
                         <li className="history-info">
                             <div className="bg-img"></div>
-                            <h1>V I T Ó R I A</h1>
+                            <h1>Vitória</h1>
                             <div className="color">a</div>
-                            <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
                             <h2>11/29/1</h2>
                         </li>
                         <li className="history-info">
                             <div className="bg-img"></div>
-                            <h1>V I T Ó R I A</h1>
+                            <h1>Vitória</h1>
                             <div className="color">a</div>
-                            <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
                             <h2>11/29/1</h2>
                         </li>
                         <li className="history-info">
                             <div className="bg-img"></div>
-                            <h1>V I T Ó R I A</h1>
+                            <h1>Vitória</h1>
                             <div className="color">a</div>
-                            <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
                             <h2>11/29/1</h2>
                         </li>
                         <li className="history-info">
                             <div className="bg-img"></div>
-                            <h1>V I T Ó R I A</h1>
+                            <h1>Vitória</h1>
                             <div className="color">a</div>
-                            <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
                             <h2>11/29/1</h2>
                         </li>
                         <li className="history-info">
                             <div className="bg-img"></div>
-                            <h1>V I T Ó R I A</h1>
+                            <h1>Vitória</h1>
                             <div className="color">a</div>
-                            <img src={Icon}/>
                             <h3>Yasuo</h3>
                             <p>35:29</p>
                             <h2>11/29/1</h2>
