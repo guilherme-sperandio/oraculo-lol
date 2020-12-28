@@ -1,0 +1,49 @@
+.profileBg {
+  width: 100%;
+  background-image: url("../../assets/png/bg.png");
+  background-color: #1f2229;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+
+}
+
+.profileContainer{
+  width: 1305px;
+  margin: 0 auto;
+}
+
+
+.profileHeader {
+  display: flex;
+  width: 100%;
+  height: 110px;
+
+}
+
+.brandHeader {
+  width: 194px;
+  margin-top: 22px;
+  margin-left: 50px;
+  
+  
+}
+.profileSrcBar{
+  margin-top: 61px;
+  margin-left: 82px;
+}
+
+.profileMainContainer {
+  display: flex;
+}
+
+.profileLeftColum{
+width: 280px;
+margin-top: 35px;
+}
+
+.profileMatchHistory{
+  width: 980px;
+  margin-left: 46px;
+  margin-top: 35px;
+}

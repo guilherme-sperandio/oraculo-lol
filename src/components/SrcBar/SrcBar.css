@@ -1,0 +1,32 @@
+.srcBarContainer {
+  position: relative;
+}
+
+.SrcBar {
+  width: 515px;
+  height: 45px;
+  text-align: center;
+  background-color: #2a3540;
+  color: #cdbe91;
+  border: none;
+  border-bottom: 4px solid #cdbe91;
+  font-size: 22px;
+  transition: 1s;
+}
+
+.SrcBar:focus {
+  border-bottom: 4px solid  #2a3540;
+  background-color: #cdbe91;
+  color:#2a3540;
+
+}
+
+.SrcBar::placeholder {
+  color: #6b6c60;
+}
+
+.SrcSvg {
+  position: absolute;
+  top: 11px;
+  left: 480px;
+}

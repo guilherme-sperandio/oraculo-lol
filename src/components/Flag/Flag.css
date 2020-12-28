@@ -1,0 +1,87 @@
+.flagCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 277px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .summonerName {
+    position: absolute;
+    color: #cdbe91;
+    font-size: 24px;
+    top: 45px;
+    letter-spacing: 0.1em;
+  }
+  
+
+  .iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+  }
+  
+  .summonerIcon {
+    width: 120px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .level {
+    position: absolute;
+    text-align: center;
+    font-size: 26px;
+    color: #cdbe91;
+    top: 180px;
+    letter-spacing: 0.05em;
+  }
+  
+  .borderLevel {
+    width: 160px;
+    position: absolute;
+    animation: roll 2s alternate infinite;
+    /* background: linear-gradient(0deg, #d80a0a, #6936a8); */
+    border-radius: 50%;
+  }
+  
+  .borderLevel-blur {
+    width: 160px;
+    filter: blur(20px);
+    position: absolute;
+    animation: roll-blur 2s alternate infinite;
+    z-index: 2;
+  }
+  @keyframes roll {
+    from {
+      filter: hue-rotate(250deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+  @keyframes roll-blur {
+    from {
+      filter: blur(10px) hue-rotate(250deg);
+    }
+    to {
+      filter: blur(10px) hue-rotate(360deg);
+    }
+  }
+  
+  .flagBorder {
+    position: absolute;
+    width: 268px;
+    top: 368px;
+    left: 3px;
+  }

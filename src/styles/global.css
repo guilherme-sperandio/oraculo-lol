@@ -1,0 +1,27 @@
+#root,
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  --lightGold: #cdbe91;
+  --greyBlue: #2a3540;
+}
+
+* {
+  font-family: Asul;
+  font-weight: bold;
+  color: #cdbe91;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+

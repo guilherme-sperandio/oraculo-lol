@@ -1,0 +1,36 @@
+.winRateContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.winRateInfo {
+  display: flex;
+  width: 100%;
+}
+.winRateTitle {
+ 
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.rate {
+  float: left;
+ 
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.rateBar{
+    display: flex;
+    width: 100%;
+}
+
+.victories {
+  
+  height: 25px;
+  background-color: #1ba9bd;
+  
+}
+.defeats {
+  
+  height: 25px;
+  background-color: #ec2040;
+}

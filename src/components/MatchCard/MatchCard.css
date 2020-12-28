@@ -1,0 +1,138 @@
+.matchCard {
+  margin-bottom: 25px;
+  position: relative;
+  list-style: none;
+  height: 140px;
+  width: 980px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.7s ease-in-out;
+}
+
+.matchDetail {
+  position: absolute;
+  width: 360px;
+  height: 90px;
+  text-align: right;
+  text-transform: uppercase;
+  top: 40px;
+  left: 50px;
+  z-index: 2;
+}
+.matchDetail h1 {
+  font-size: 50px;
+  letter-spacing: 0.5em;
+}
+
+.matchDetail h3 {
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 0.2em;
+  margin-right: -10px;
+}
+
+.matchCard h2 {
+  position: absolute;
+  top: 85px;
+  right: 20px;
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  z-index: 2;
+}
+.matchResultGradient {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 10px;
+  width: 100%;
+  z-index: 1;
+}
+
+.win {
+  background-image: linear-gradient(
+    270deg,
+    #1ba9bd,
+    #1baabdb7,
+    transparent,
+    transparent
+  );
+}
+.lose {
+  background-image: linear-gradient(
+    270deg,
+    #ec2040,
+    #ec203f93,
+    transparent,
+    transparent
+  );
+}
+
+.fadeGradient {
+  position: absolute;
+  height: 140px;
+  width: 980px;
+  top: 0px;
+  background-image: linear-gradient(
+    90deg,
+    #2a3540,
+    #2a3540c4,
+    transparent,
+    transparent
+  );
+  z-index: 1;
+  transition: opacity 0.15s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.heroBg {
+  height: 140px;
+  width: 980px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.6;
+  z-index: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.matchCard:hover {
+  transform: scale(1.02);
+}
+
+.matchCard:hover .win {
+  background-image: linear-gradient(
+    270deg,
+    transparent,
+    #1baabdb7,
+    #1ba9bd,
+    #1baabdb7,
+    transparent
+  );
+
+  animation: slide 3s linear infinite;
+}
+.matchCard:hover .lose {
+  background-image: linear-gradient(
+    270deg,
+    transparent,
+    #ec203f93,
+    #ec2040,
+    #ec203f93,
+    transparent
+  );
+
+  animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    background-position: 60px 0px;
+  }
+  to {
+    background-position: 1040px 0px;
+  }
+}
+.matchCard:hover .fadeGradient {
+  opacity: 0.6;
+}
