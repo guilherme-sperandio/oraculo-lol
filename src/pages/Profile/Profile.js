@@ -40,7 +40,7 @@ function Profile() {
   useEffect(() => {
     setLoading(true);
     loadSummoner(summoner, setSummonerInfo, setLoading);
-  }, [summoner]);
+  }, [loadSummoner,summoner]);
 
   
   return (
