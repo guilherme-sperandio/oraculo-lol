@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Brand from "../../assets/svg/oraculo.svg";
 import SrcBar from "../../components/SrcBar/SrcBar"
 import './Home.css'
@@ -12,7 +12,7 @@ function Home() {
     return (
         <main className="homeBg">
             <div className="homeContainer">
-                <a><img className="brandBig" src={Brand} /></a>
+                <Link to="/"><img className="brandBig"  alt="" src={Brand} /></Link>
                 <SrcBar onSubmit={handleSubmit}/>
             </div>
 

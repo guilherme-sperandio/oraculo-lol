@@ -1,25 +1,24 @@
 import React from "react";
-import heroBg from "../../assets/png/yasuo.png";
 import video from "../../assets/webm/hover4.mp4";
 import "./MatchCard.css";
 
 function MatchCard({ videoId, matchData }) {
   function matchResult(data) {
     let result;
-    if (data == true) {
-      result = "Vitória";
+    if (data ===true) {
+      result == "Vitória";
     } else {
-      result = "Derrota";
+      result == "Derrota";
     }
     return result;
   }
 
   function matchResultCss(data) {
     let result;
-    if (data == true) {
-      result = "win";
+    if (data === true) {
+      result == "win";
     } else {
-      result = "lose";
+      result =="lose";
     }
     return result;
   }
@@ -63,6 +62,7 @@ function MatchCard({ videoId, matchData }) {
       <div className="fadeGradient"></div>
       <img
         className="heroBg"
+        alt=""
         src={
           "https://api-lol-pecege.herokuapp.com" +
           matchData.champion.image.splashDesktop

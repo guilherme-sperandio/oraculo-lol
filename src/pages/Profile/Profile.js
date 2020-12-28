@@ -18,14 +18,14 @@ function Profile() {
   }
 
   const {summoner} = useParams();
-  
+
   const [loading, setLoading] = useState(true);
   const [summonerInfo, setSummonerInfo] = useState("");
 
   useEffect(() => {
     setLoading(true);
     loadSummoner(summoner, setSummonerInfo, setLoading);
-  }, [loadSummoner, summoner]);
+  }, [summoner]);
 
   
   return (
@@ -37,7 +37,7 @@ function Profile() {
             <div className="profileContainer">
 
               <header className="profileHeader">
-                <a href="/"><img className="brandHeader" src={Brand} /></a>
+                <a href="/"><img className="brandHeader" alt="" src={Brand} /></a>
 
                 <div className="profileSrcBar">
                   <SrcBar onSubmit={handleSubmit}/>

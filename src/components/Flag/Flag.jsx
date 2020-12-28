@@ -1,7 +1,5 @@
 
-import Icon from "../../assets/png/wolf-icon.png";
 import Level from "../../assets/svg/Simple-Border.svg";
-import FlagBorder from "../../assets/border/Bronze.png";
 import { ReactComponent as Cardimg } from '../../assets/svg/card.svg';
 import "./Flag.css"
 
@@ -22,16 +20,16 @@ function Flag({summonerData}) {
         <div className="iconContainer">
             
              <div className="icon">
-                <img className="borderLevel-blur" src={Level} />
-                <img className="borderLevel" src={Level} />
-                <img className="summonerIcon" src={"https://api-lol-pecege.herokuapp.com"+summonerData.imageProfile} />
+                <img className="borderLevel-blur" alt="" src={Level} />
+                <img className="borderLevel" alt="" src={Level} />
+                <img className="summonerIcon"  alt="" src={"https://api-lol-pecege.herokuapp.com"+summonerData.imageProfile} />
             </div>
             
             <p className="level">{summonerData.summoner?.summonerLevel}</p>
         
         </div>
         
-        <img className="flagBorder" src={"https://api-lol-pecege.herokuapp.com"+flagSolo.flag} />
+        <img className="flagBorder" alt="" src={"https://api-lol-pecege.herokuapp.com"+flagSolo.flag} />
         </div>
     );
 }

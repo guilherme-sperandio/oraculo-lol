@@ -19,7 +19,7 @@ function SrcBar({onSubmit}) {
         name="summonerName"
         placeholder="Buscar invocador"
       />
-      <img className="SrcSvg" src={Src} />
+      <img alt="" className="SrcSvg" src={Src} />
     </form>
   );
 }

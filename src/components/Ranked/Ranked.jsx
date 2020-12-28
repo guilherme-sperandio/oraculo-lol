@@ -1,5 +1,4 @@
-import Shield from "../../assets/png/Bronze-Rank.png";
-import Shield2 from "../../assets/png/Silver-Rank.png";
+
 import"./Ranked.css"
 
 function Ranked({summonerData}) {
@@ -15,13 +14,13 @@ function Ranked({summonerData}) {
       <div className="rankedElo">
         <h2>{rankSolo.queueType.replace(/_/gm," ").replace("RANKED","")}</h2>
         <h3>{rankSolo.tier +" "+ rankSolo.rank}</h3>
-        <img src={"https://api-lol-pecege.herokuapp.com"+rankSolo.emblem} />
+        <img alt="" src={"https://api-lol-pecege.herokuapp.com"+rankSolo.emblem} />
       </div>
 
       <div className="rankedElo">
       <h2>{rankFlex.queueType.replace(/_/gm," ").replace("RANKED","")}</h2>
         <h3>{rankFlex.tier +" "+ rankFlex.rank}</h3>
-        <img src={"https://api-lol-pecege.herokuapp.com"+rankFlex.emblem} />
+        <img alt="" src={"https://api-lol-pecege.herokuapp.com"+rankFlex.emblem} />
       </div>
     </div>
   );

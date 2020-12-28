@@ -8,9 +8,9 @@ function Flag({summonerData}) {
   return (
     <div className="loadingBg">
       <div className="icon">
-        <img className="borderLevel-blur" src={Level} />
-        <img className="borderLevel" src={Level} />
-        <img className="summonerIcon" src={Icon} />
+        <img className="borderLevel-blur" alt="" src={Level} />
+        <img className="borderLevel" alt="" src={Level} />
+        <img className="summonerIcon" alt="" src={Icon} />
       </div>
     </div>
   );
