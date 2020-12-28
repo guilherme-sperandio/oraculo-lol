@@ -5,7 +5,7 @@ import axios from "axios";
 import Brand from "../../assets/svg/oraculo.svg";
 import './Profile.css';
 import MatchHistory from '../../components/MatchHistory/MatchHistory';
-import { useState, useEffect } from 'react';
+import { useState, useEffect,useCallback } from 'react';
 import SrcBar from "../../components/SrcBar/SrcBar"
 import Flag from "../../components/Flag/Flag"
 import Ranked from "../../components/Ranked/Ranked"
@@ -13,35 +13,37 @@ import Loading from "../../components/Loading/Loading"
 
 function Profile() {
 
+  const [loading, setLoading] = useState(true);
+  const [summonerInfo, setSummonerInfo] = useState("");
+  const {summoner} = useParams();
+
   const history = useHistory();
   function handleSubmit(summoner) {
     history.push(`/profile/${summoner}`);
     
   }
-
-  async function loadSummoner(nickName, setSummoner, setLoading) {
-    try {
-        const response = await axios.get(`https://api-lol-pecege.herokuapp.com/summoner/${nickName}`);
-        setSummoner(response.data);
-        setLoading(false)
-    } catch (error) {    
-      history.push('/');
-      toast.dark("Invocador não encontrado, tente novamente!", {
-        position: 'top-center',
-      })
-    }
-  }
-
-  const {summoner} = useParams();
-
-  const [loading, setLoading] = useState(true);
-  const [summonerInfo, setSummonerInfo] = useState("");
-
+  const loadSummoner = useCallback(
+    async () => {
+      try {
+          const response = await axios.get(`https://api-lol-pecege.herokuapp.com/summoner/${summoner}`);
+          setSummonerInfo(response.data);
+          setLoading(false)
+      } catch (error) {    
+        history.push('/');
+        toast.dark("Invocador não encontrado, tente novamente!", {
+          position: 'top-center',
+        })
+      }
+    },
+    [summoner,history],
+  );
+  
   useEffect(() => {
     setLoading(true);
-    loadSummoner(summoner, setSummonerInfo, setLoading);
+    loadSummoner();
   }, [loadSummoner,summoner]);
 
+ 
   
   return (
     <>
