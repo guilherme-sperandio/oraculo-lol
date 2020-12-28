@@ -1,20 +1,35 @@
 import React from 'react';
+import { toast} from 'react-toastify';
 import { useParams,useHistory } from "react-router-dom";
+import axios from "axios";
 import Brand from "../../assets/svg/oraculo.svg";
 import './Profile.css';
 import MatchHistory from '../../components/MatchHistory/MatchHistory';
 import { useState, useEffect } from 'react';
-import loadSummoner from '../../api/summonerInfo';
 import SrcBar from "../../components/SrcBar/SrcBar"
 import Flag from "../../components/Flag/Flag"
 import Ranked from "../../components/Ranked/Ranked"
 import Loading from "../../components/Loading/Loading"
 
 function Profile() {
+
   const history = useHistory();
   function handleSubmit(summoner) {
     history.push(`/profile/${summoner}`);
     
+  }
+
+  async function loadSummoner(nickName, setSummoner, setLoading) {
+    try {
+        const response = await axios.get(`https://api-lol-pecege.herokuapp.com/summoner/${nickName}`);
+        setSummoner(response.data);
+        setLoading(false)
+    } catch (error) {    
+      history.push('/');
+      toast.dark("Invocador não encontrado, tente novamente!", {
+        position: 'top-center',
+      })
+    }
   }
 
   const {summoner} = useParams();

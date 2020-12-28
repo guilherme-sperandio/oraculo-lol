@@ -24,4 +24,6 @@ select:focus {
   outline: 0;
 }
 
-
+.Toastify__progress-bar--dark {
+  background: linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55) !important;
+}

@@ -29,7 +29,7 @@ function Flag({summonerData}) {
         
         </div>
         
-        <img className="flagBorder" alt="" src={"https://api-lol-pecege.herokuapp.com"+flagSolo.flag} />
+        <img className="flagBorder" alt="" src={`https://api-lol-pecege.herokuapp.com${flagSolo ? flagSolo.flag : "/datadragon/ranked-flags/UNRANKED"}`} />
         </div>
     );
 }
