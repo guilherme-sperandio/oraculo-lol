@@ -6,9 +6,9 @@ function MatchCard({ videoId, matchData }) {
   function matchResult(data) {
     let result;
     if (data ===true) {
-      result == "Vitória";
+      result ="Vitória";
     } else {
-      result == "Derrota";
+      result = "Derrota";
     }
     return result;
   }
@@ -16,9 +16,9 @@ function MatchCard({ videoId, matchData }) {
   function matchResultCss(data) {
     let result;
     if (data === true) {
-      result == "win";
+      result ="win";
     } else {
-      result =="lose";
+      result ="lose";
     }
     return result;
   }
