@@ -1,4 +1,4 @@
-import Icon from "../../assets/png/wolf-icon.png";
+import Icon from "../../assets/png/loading.png";
 import Level from "../../assets/svg/Simple-Border.svg";
 import "./Loading.css";
 
